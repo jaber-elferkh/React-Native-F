@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import AddTodo from './components/addTodo';
 import Header from './components/header';
+import Sandbox from './components/sandbox';
 import TodoItem from './components/todoItem';
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
   };
 
   return (
+    // <Sandbox />
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <View style={styles.container}>
         <Header />
@@ -63,16 +65,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
   },
   content: {
-    paddingHorizontal: 20,
-    paddingTop: 10,
+    flex: 1,
+    padding: 20,
+    // borderWidth: 2,
+    // borderColor: 'red',
   },
-  // list: {
-  //   backgroundColor: '#fff05a',
-  //   padding: 15,
-  //   marginTop: 10,
-  // },
+  list: {
+    flex: 1,
+    paddingTop: 10,
+    // borderWidth: 2,
+    // borderColor: 'green',
+  },
 });
